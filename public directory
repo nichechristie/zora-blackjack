@@ -1,0 +1,67 @@
+# Create public directory with index.html
+mkdir -p public
+
+cat > public/index.html << 'EOF'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zora Blackjack - Play with ZORA Tokens</title>
+  
+  <meta property="fc:frame" content="vNext" />
+  <meta property="fc:frame:image" content="https://your-app.vercel.app/og-image.png" />
+  <meta property="fc:frame:button:1" content="Play Now 🎮" />
+  <meta property="fc:frame:button:1:action" content="link" />
+  <meta property="fc:frame:button:1:target" content="https://your-app.vercel.app" />
+  
+  <meta property="og:title" content="Zora Blackjack" />
+  <meta property="og:description" content="Play blackjack with ZORA tokens!" />
+  
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+    }
+    h1 {
+      font-size: 4em;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.5em;
+      margin: 10px 0;
+    }
+    a {
+      color: #FFD700;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎰 Zora Blackjack</h1>
+    <p>Play blackjack with ZORA tokens!</p>
+    <p style="margin-top: 40px; font-size: 1em;">
+      Built by <a href="https://github.com/nichechristie">@nichechristie</a>
+    </p>
+    <p style="font-size: 0.9em; margin-top: 20px;">
+      Token: <code style="background: rgba(255,255,255,0.1); padding: 5px 10px; border-radius: 5px;">0xf5fa...d754</code>
+    </p>
+  </div>
+</body>
+</html>
+EOF
