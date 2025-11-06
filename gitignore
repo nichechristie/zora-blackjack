@@ -1,0 +1,13 @@
+# Create .gitignore
+cat > .gitignore << 'EOF'
+node_modules/
+.env
+.env.local
+.env.production
+npm-debug.log*
+.DS_Store
+.railway
+.vercel
+dist/
+build/
+EOF
