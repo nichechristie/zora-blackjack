@@ -1,0 +1,10 @@
+# Create .env.example (WITHOUT your actual keys - for GitHub)
+cat > .env.example << 'EOF'
+PORT=3001
+NODE_ENV=production
+FRONTEND_URL=https://your-app.vercel.app
+BACKEND_URL=https://your-backend.railway.app
+COINBASE_COMMERCE_API_KEY=your_api_key_here
+COINBASE_WEBHOOK_SECRET=your_webhook_secret_here
+TOKEN_CONTRACT=0xf5fa0104d9e23f4ba4c59a73d88241cbe26ed754
+EOF
