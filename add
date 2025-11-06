@@ -1,0 +1,14 @@
+# Add all files
+git add .
+
+# Commit
+git commit -m "Initial commit - Zora Blackjack Farcaster Frame"
+
+# Connect to your GitHub repo
+git remote add origin https://github.com/nichechristie/zora-blackjack.git
+
+# Set branch to main
+git branch -M main
+
+# Push to GitHub
+git push -u origin main
