@@ -1,19 +1,9 @@
-# Create railway.json
-cat > railway.json << 'EOF'
 {
-  "$schema": "https://railway.app/railway.schema.json",
   "build": {
-    "builder": "NIXPACKS"
+    "builder": "NIXPACKS",
+    "nixpacksPlan": {}
   },
   "deploy": {
-    "startCommand": "node server.js",
-    "restartPolicyType": "ON_FAILURE",
-    "restartPolicyMaxRetries": 10
+    "startCommand": "node server.js"
   }
 }
-EOF
-
-# Push to GitHub
-git add railway.json
-git commit -m "Add Railway configuration"
-git push
